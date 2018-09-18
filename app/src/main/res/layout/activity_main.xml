@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!-- This line is to make the keyboard sstop popping up automatically -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true">-->
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView36"
+            app:layout_constraintStart_toEndOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/tvAvgTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+            app:layout_constraintEnd_toStartOf="@+id/butAvgTemp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/tvHumidifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView39"
+            app:layout_constraintEnd_toEndOf="@+id/tvValve"
+            app:layout_constraintStart_toEndOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/tvHeater"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+            app:layout_constraintEnd_toEndOf="@+id/tvWaterLvl"
+            app:layout_constraintStart_toEndOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/tvWaterLvl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="@+id/tvAvgHumid"
+            app:layout_constraintStart_toEndOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/tvAvgHumid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+            app:layout_constraintEnd_toEndOf="@+id/tvAvgTemp"
+            app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+            app:layout_constraintEnd_toStartOf="@+id/tvAvgTemp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+            app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView36"
+            app:layout_constraintStart_toEndOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView30"
+            app:layout_constraintStart_toEndOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
+            app:layout_constraintStart_toEndOf="@+id/textView19" />
+
+        <Button
+            android:id="@+id/butAvgTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/Detail"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvAvgTemp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvAvgTemp" />
+
+        <Button
+            android:id="@+id/butAvgHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Detail"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvAvgHumid"
+            app:layout_constraintEnd_toEndOf="@+id/butAvgTemp"
+            app:layout_constraintStart_toEndOf="@+id/tvAvgHumid" />
+
+        <Button
+            android:id="@+id/butHumidifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Detail"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvHumidifier"
+            app:layout_constraintEnd_toEndOf="@+id/togbutHeaterIn"
+            app:layout_constraintStart_toEndOf="@+id/tvHumidifier" />
+
+        <Button
+            android:id="@+id/togbutHeaterIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Detail"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvHeater"
+            app:layout_constraintEnd_toEndOf="@+id/butWaterLvl"
+            app:layout_constraintStart_toEndOf="@+id/tvHeater" />
+
+        <Button
+            android:id="@+id/butWaterLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Detail"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvWaterLvl"
+            app:layout_constraintEnd_toEndOf="@+id/butAvgHumid"
+            app:layout_constraintStart_toEndOf="@+id/tvWaterLvl" />
+
+        <TextView
+            android:id="@+id/textViewTItle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Machine_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Humidifier"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Heater"
+            app:layout_constraintEnd_toEndOf="@+id/textView20"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Water_Level"
+            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Avg_Humidity"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Avg_Temperature"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTItle" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Target_Humid"
+            app:layout_constraintEnd_toEndOf="@+id/textView36"
+            app:layout_constraintStart_toStartOf="@+id/textView36"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Target_Temp"
+            app:layout_constraintStart_toStartOf="@+id/textView36"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <Button
+            android:id="@+id/butSetTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Change"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editTemp"
+            app:layout_constraintEnd_toEndOf="@+id/butHumidifier"
+            app:layout_constraintStart_toEndOf="@+id/editTemp" />
+
+        <TextView
+            android:id="@+id/editTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/tvHumidifier"
+            app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/editHumid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="@+id/editTemp"
+            app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/butSetHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Change"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editHumid"
+            app:layout_constraintEnd_toEndOf="@+id/butSetTemp"
+            app:layout_constraintStart_toEndOf="@+id/editHumid" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Valve"
+            app:layout_constraintEnd_toEndOf="@+id/textView30"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Semi_Colon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+            app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/tvValve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/tvHeater"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/butValve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/Change"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvValve"
+            app:layout_constraintEnd_toEndOf="@+id/togbutHeaterIn"
+            app:layout_constraintStart_toEndOf="@+id/tvValve" />
+
+        <Button
+            android:id="@+id/butEStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/EmergencyStop"
+            app:layout_constraintEnd_toEndOf="@+id/butMainErrorLog"
+            app:layout_constraintStart_toStartOf="@+id/butMainErrorLog"
+            app:layout_constraintTop_toBottomOf="@+id/butMainErrorLog" />
+
+        <Button
+            android:id="@+id/butMainErrorLog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/ErrorLog"
+            app:layout_constraintEnd_toEndOf="@+id/butSetHumid"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/butHidden"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

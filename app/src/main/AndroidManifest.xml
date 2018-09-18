@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jkliew.jk_fms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden"> <!-- This line is to disable auto popping keyboard -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Calculate_Temp" />
+        <activity android:name=".Calculate_Humid" />
+        <activity android:name=".plot_Temp_Graph" />
+        <activity android:name=".Main_Error_Log" />
+        <activity android:name=".Temp_Error_Log" />
+        <activity android:name=".Humid_Error_Log" />
+        <activity android:name=".plot_Humid_Graph" />
+        <activity android:name=".WaterLvl_Error_Log"></activity>
+    </application>
+
+</manifest>

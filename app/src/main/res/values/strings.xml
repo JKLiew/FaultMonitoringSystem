@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">JK_FMS</string>
+    <string name="Machine_title">Fermenter_1</string>
+    <string name="Avg_Temperature">Avg. Temperature</string>
+    <string name="Avg_Humidity">Avg. Humidity</string>
+    <string name="Water_Level">Water Level</string>
+    <string name="Overflow">Overflow</string>
+    <string name="Heater">Heater</string>
+    <string name="Humidifier">Humidifier</string>
+    <string name="Input_Valve">Input Valve</string>
+    <string name="Output_Valve">Output Valve</string>
+    <string name="Semi_Colon">:</string>
+    <string name="Detail">Details</string>
+    <string name="Target_Temp">Target Temperature</string>
+    <string name="Target_Humid">Target Humidity</string>
+    <string name="Set">Set</string>
+    <string name="Valve">Valve</string>
+    <string name="EmergencyStop">Emergency Stop Button</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Temp1">Temperature 1</string>
+    <string name="Temp2">Temperature 2</string>
+    <string name="Temp3">Temperature 3</string>
+    <string name="Temp4">Temperature 4</string>
+    <string name="Graph">Graph</string>
+    <string name="Refresh">Refresh</string>
+    <string name="SwitchT1">Temp 1</string>
+    <string name="SwitchT2">Temp 2</string>
+    <string name="SwitchT3">Temp 3</string>
+    <string name="SwitchT4">Temp 4</string>
+    <string name="SwitchAvgT">Avg.Temp</string>
+    <string name="Change">Change</string>
+    <string name="ErrorLog">Error Log</string>
+    <string name="Parameter">Parameter</string>
+    <string name="Time">Time</string>
+    <string name="Date">Date</string>
+    <string name="Results">Results</string>
+    <string name="Avg_Value">Sensor Reading</string>
+    <string name="Tar_Value">Target Value</string>
+    <string name="Humid1">Humidity 1</string>
+    <string name="Humid2">Humidity 2</string>
+    <string name="Humid3">Humidity 3</string>
+    <string name="Humid4">Humidity 4</string>
+
+</resources>

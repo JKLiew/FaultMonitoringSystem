@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculate_Humid">
+
+    <TextView
+        android:id="@+id/textViewTitleH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Humidity"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9H"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Humid1"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView11H"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Humid2"
+        app:layout_constraintEnd_toEndOf="@+id/textView9H"
+        app:layout_constraintStart_toStartOf="@+id/textView9H"
+        app:layout_constraintTop_toBottomOf="@+id/textView9H" />
+
+    <TextView
+        android:id="@+id/textView12H"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Humid3"
+        app:layout_constraintEnd_toEndOf="@+id/textView11H"
+        app:layout_constraintStart_toStartOf="@+id/textView11H"
+        app:layout_constraintTop_toBottomOf="@+id/textView11H" />
+
+    <TextView
+        android:id="@+id/textView13H"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Humid4"
+        app:layout_constraintEnd_toEndOf="@+id/textView12H"
+        app:layout_constraintStart_toStartOf="@+id/textView12H"
+        app:layout_constraintTop_toBottomOf="@+id/textView12H" />
+
+    <TextView
+        android:id="@+id/textView14H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9H"
+        app:layout_constraintStart_toEndOf="@+id/textView9H" />
+
+    <TextView
+        android:id="@+id/tvHumid1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView9H"
+        app:layout_constraintEnd_toEndOf="@+id/tvRAvgHumidIn"
+        app:layout_constraintStart_toEndOf="@+id/textView14H" />
+
+    <Button
+        android:id="@+id/butRHumid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Refresh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvHumid1"
+        app:layout_constraintEnd_toEndOf="@+id/butSetHumidIn"
+        app:layout_constraintStart_toEndOf="@+id/tvHumid1" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView11H"
+        app:layout_constraintStart_toEndOf="@+id/textView11H" />
+
+    <TextView
+        android:id="@+id/tvHumid2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/tvHumid1"
+        app:layout_constraintStart_toEndOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/butRHumid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Refresh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvHumid2"
+        app:layout_constraintEnd_toEndOf="@+id/butRHumid1"
+        app:layout_constraintStart_toEndOf="@+id/tvHumid2" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView12H"
+        app:layout_constraintStart_toEndOf="@+id/textView12H" />
+
+    <TextView
+        android:id="@+id/tvHumid3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/tvHumid2"
+        app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView13H"
+        app:layout_constraintStart_toEndOf="@+id/textView13H" />
+
+    <TextView
+        android:id="@+id/tvHumid4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/tvHumid3"
+        app:layout_constraintStart_toEndOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/butRHumid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Refresh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvHumid3"
+        app:layout_constraintEnd_toEndOf="@+id/butRHumid2"
+        app:layout_constraintStart_toEndOf="@+id/tvHumid3" />
+
+    <Button
+        android:id="@+id/butRHumid4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Refresh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvHumid4"
+        app:layout_constraintEnd_toEndOf="@+id/butRHumid3"
+        app:layout_constraintStart_toEndOf="@+id/tvHumid4" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Target_Humid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleH" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/butSetHumidIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/Change"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editHumidIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editHumidIn" />
+
+    <ToggleButton
+        android:id="@+id/butSetValve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Valve"
+        android:textOff="Valve OFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/togbutHumidifierIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/togbutHumidifierIn" />
+
+    <ToggleButton
+        android:id="@+id/togbutHumidifierIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Humidifier"
+        android:textOff="Humidifier OFF"
+        android:textOn="Humidifier ON"
+        app:layout_constraintEnd_toStartOf="@+id/butSetValve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butErrorLogHumidIn" />
+
+    <Button
+        android:id="@+id/butEStopHumidIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/EmergencyStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/togbutHumidifierIn" />
+
+    <Button
+        android:id="@+id/butRAvgHumidIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Refresh"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvRAvgHumidIn"
+        app:layout_constraintEnd_toEndOf="@+id/butSetHumidIn"
+        app:layout_constraintStart_toEndOf="@+id/tvRAvgHumidIn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/Avg_Humidity"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/Semi_Colon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvRAvgHumidIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/editHumidIn"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/editHumidIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView28"
+        app:layout_constraintEnd_toStartOf="@+id/butSetHumidIn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/butErrorLogHumidIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/ErrorLog"
+        app:layout_constraintEnd_toEndOf="@+id/butRHumid4"
+        app:layout_constraintStart_toStartOf="@+id/textView13H"
+        app:layout_constraintTop_toBottomOf="@+id/textView13H" />
+
+    <!--<Button-->
+        <!--android:id="@+id/butHiddenHumidIn"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+
+</android.support.constraint.ConstraintLayout>
